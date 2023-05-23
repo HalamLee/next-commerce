@@ -25,5 +25,12 @@
   "devDependencies": {
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   }
 }
