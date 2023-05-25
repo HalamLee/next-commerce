@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Carousel from 'nuka-carousel';
 import { useState } from 'react';
@@ -37,6 +38,13 @@ export default function Products() {
   const [index, setIndex] = useState(0);
   return (
     <>
+      <Head>
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+      </Head>
       <Carousel
         animation="zoom"
         autoplay
